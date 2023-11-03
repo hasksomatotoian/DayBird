@@ -57,7 +57,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NHAPI">
-      <HintPath>..\NHAPI\NHAPI\bin\x64\Debug\NHAPI.dll</HintPath>
+      <HintPath>..\NHAPI\NHAPI\obj\Release\NHAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
