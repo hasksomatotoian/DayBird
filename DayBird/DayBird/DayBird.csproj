@@ -73,7 +73,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UI">
-      <HintPath>.\UI.exe</HintPath>
+      <HintPath>..\..\..\Nighthawk\UI\bin\Release\UI.exe</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="WindowsBase" />
